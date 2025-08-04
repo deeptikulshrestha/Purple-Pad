@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Purple Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    
+    <div class="sidebar">
+      <h2>🟪 Explorer</h2>
+      <ul>
+        <li class="active">index.html</li>
+        <li>style.css</li>
+        <li>script.js</li>
+      </ul>
+    </div>
+
+
+    <div class="main">
+      <div class="tabs">
+        <span class="tab active">index.html</span>
+        <span class="tab">style.css</span>
+        <span class="tab">script.js</span>
+      </div>
+
+      <div class="editor-section">
+        <textarea id="html-code" class="code-area" placeholder="<!-- Write HTML here -->"></textarea>
+        <textarea id="css-code" class="code-area hidden" placeholder="/* Write CSS here */"></textarea>
+        <textarea id="js-code" class="code-area hidden" placeholder="// Write JavaScript here"></textarea>
+        <iframe id="preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

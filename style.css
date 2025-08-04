@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1b2f;
+  color: #e0c3fc;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2a2140;
+  padding: 20px;
+  border-right: 1px solid #4d3d6b;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cdb4f5;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background 0.2s;
+  color: #b893f4;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background-color: #4d3d6b;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  background-color: #3c2c5c;
+  display: flex;
+  padding: 8px 10px;
+  border-bottom: 1px solid #4d3d6b;
+}
+
+.tab {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #4d3d6b;
+  color: #f1eaff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab.active {
+  background-color: #6a4dad;
+  font-weight: bold;
+}
+
+.editor-section {
+  display: flex;
+  height: 100%;
+}
+
+.code-area {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  font-size: 14px;
+  color: #f1eaff;
+  background-color: #1c152b;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+#preview {
+  width: 50%;
+  height: 100%;
+  border: none;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
